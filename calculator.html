@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Average Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Average Calculator</h1>
+        <label for="numberType">Number Type:</label>
+        <select id="numberType">
+            <option value="p">Prime</option>
+            <option value="f">Fibonacci</option>
+            <option value="e">Even</option>
+            <option value="r">Random</option>
+        </select>
+        <button id="calculate">Calculate Average</button>
+        <div id="loading" style="display: none;">Loading...</div>
+        <div id="error" style="display: none;"></div>
+        <div id="result">
+            <h2>Current Window:</h2>
+            <ul id="numberList"></ul>
+            <h2>Average:</h2>
+            <p id="average"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
